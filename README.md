@@ -64,19 +64,19 @@ The analysis answers five questions:
 
 ### 1. Math scores follow a near-bell curve, and 13.5% of students fail
 
-![Distribution of math scores](images/math_distribution.png)
+![Distribution of math scores](img/math_distribution.png)
 
 Math scores average 66.1 with a median of 66.0, and the distribution is close to symmetric, with a slightly longer tail toward low scores. A formal normality test rejects a perfect bell curve, but with 1,000 students it flags even small departures, so in practice the scores are approximately normal. **13.5% of students scored below the pass mark of 50.**
 
 ### 2. Students on free/reduced lunch fail math 4.5 times as often
 
-![Math fail rate by lunch type](images/fail_rate_by_lunch.png)
+![Math fail rate by lunch type](img/fail_rate_by_lunch.png)
 
 27.0% of students on free/reduced lunch fail math, compared with 6.0% of students on standard lunch. They make up 35.5% of all students but **71.1% of those failing math** (96 of 135). Apart from the anonymized race/ethnicity groups, this is the largest math gap in the data: an average of 58.9 versus 70.0.
 
 ### 3. Test preparation lifts every subject, but math the least
 
-![Average score by subject and test preparation](images/test_prep_by_subject.png)
+![Average score by subject and test preparation](img/test_prep_by_subject.png)
 
 Students who completed the preparation course scored higher in all three subjects: **+5.6 points in math, +7.4 in reading and +9.9 in writing**, all statistically significant. Only 35.8% of students completed the course. It helps math the least, even though math is the school's priority.
 
@@ -124,7 +124,7 @@ The full analysis, including data cleaning, statistics, tests and every chart, i
 To run it, load the data straight from this repository:
 
 ```python
-url = "https://raw.githubusercontent.com/abdullah-hattab/Student-Performance-EDA/main/StudentsPerformance.csv"
+url = "https://raw.githubusercontent.com/abdullah-hattab/Student-Performance-EDA/main/data/StudentsPerformance.csv"
 df = pd.read_csv(url)
 ```
 
@@ -134,12 +134,13 @@ df = pd.read_csv(url)
 Student-Performance-EDA/
 ├── README.md                       # Project summary (this file)
 ├── Student_Performance_EDA.ipynb   # Full technical analysis
-├── StudentsPerformance.csv         # Raw dataset
-└── images/                         # Charts used in this README
+├── data/
+│   └── StudentsPerformance.csv     # Raw dataset
+└── img/                            # Exported charts
 ```
 
 ---
 
 ## Author
 
-**Abdallah Hattab** —  · [GitHub @abdullah-hattab](https://github.com/abdullah-hattab)
+**Abdallah Hattab** [GitHub @abdullah-hattab](https://github.com/abdullah-hattab)
