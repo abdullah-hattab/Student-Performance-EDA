@@ -60,26 +60,44 @@ The analysis answers five questions:
 
 ---
 
-## Key Findings
+Key Findings
+1. Math scores follow a near-bell curve, and 13.5% of students fail
 
-### 1. Math scores follow a near-bell curve, and 13.5% of students fail
+Histogram of math scores with mean and median marked
 
-![Distribution of math scores](img/math_distribution.png)
+Math scores average 66.1 with a median of 66.0, and the distribution is close to symmetric, with a slightly longer tail toward low scores. A formal normality test rejects a perfect bell curve, but with 1,000 students it flags even small departures, so in practice the scores are approximately normal. 13.5% of students scored below the pass mark of 50.
 
-Math scores average 66.1 with a median of 66.0, and the distribution is close to symmetric, with a slightly longer tail toward low scores. A formal normality test rejects a perfect bell curve, but with 1,000 students it flags even small departures, so in practice the scores are approximately normal. **13.5% of students scored below the pass mark of 50.**
+2. Test preparation is linked to higher scores, but only about a third of students take it
 
-### 2. Students on free/reduced lunch fail math 4.5 times as often
+Number of students who completed the test preparation course
 
-![Math fail rate by lunch type](img/fail_rate_by_lunch.png)
+Only 358 of 1,000 students (35.8%) completed the preparation course. Those who did scored higher in every subject: +5.6 points in math, +7.4 in reading and +9.9 in writing, all statistically significant. The gain is smallest in math, even though math is the school's priority.
 
-27.0% of students on free/reduced lunch fail math, compared with 6.0% of students on standard lunch. They make up 35.5% of all students but **71.1% of those failing math** (96 of 135). Apart from the anonymized race/ethnicity groups, this is the largest math gap in the data: an average of 58.9 versus 70.0.
+3. Reading and writing scores move together
 
-### 3. Test preparation lifts every subject, but math the least
+Scatter plot of reading scores against writing scores
 
-![Average score by subject and test preparation](img/test_prep_by_subject.png)
+Reading and writing are very strongly correlated (r = 0.95): a student who does well in one almost always does well in the other. Math is more independent (r = 0.82 with reading, 0.80 with writing), which suggests it draws on a partly different set of skills.
 
-Students who completed the preparation course scored higher in all three subjects: **+5.6 points in math, +7.4 in reading and +9.9 in writing**, all statistically significant. Only 35.8% of students completed the course. It helps math the least, even though math is the school's priority.
+4. Math and writing vary the most; reading is the most consistent
 
+Box plots of math, reading and writing scores
+
+Writing (standard deviation 15.20) and math (15.16) are effectively tied for the most variation, while reading is the most consistent (14.60). Math also has the lowest median (66, against 70 for reading and 69 for writing) and the widest range, down to a score of 0. Every outlier in all three subjects is a low score.
+
+5. Math scores rise with parental education, but not perfectly
+
+Box plots of math score by parental education level
+
+The average math score rises from 62.1 for "high school" to 69.7 for "master's degree", although "some high school" (63.5) slightly outperforms "high school". The boxes overlap heavily: the spread within each group is much larger than the gaps between groups, so parental education alone says little about an individual student. The master's group has only 59 students.
+
+6. Students on free/reduced lunch fail math 4.5 times as often
+
+27.0% of students on free/reduced lunch fail math, compared with 6.0% of students on standard lunch. They make up 35.5% of all students but 71.1% of those failing math (96 of 135). Apart from the anonymized race/ethnicity groups, this is the largest math gap in the data: an average of 58.9 versus 70.0.
+
+7. The gender gap reverses by subject
+
+Male students score 5.1 points higher in math, while female students score 7.1 points higher in reading and 9.2 points higher in writing.
 ### Other findings
 
 - **Reading and writing go together.** Their scores are very strongly correlated (r = 0.95). Math is more independent (r = 0.80 to 0.82).
